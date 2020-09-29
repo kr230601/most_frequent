@@ -1,0 +1,21 @@
+#Program to display the count of letters in reversed manner
+
+def most_frequent(string):
+    letterandcount={}
+    for letter in string:
+        if letter in letterandcount.keys():
+            letterandcount[letter]+=1
+
+        else:
+            letterandcount[letter]=1
+
+
+
+    for x in reversed(letterandcount):
+        print(str(x)+"="+str(letterandcount[x]))
+
+    
+
+
+string=input("Enter the word:: ")
+most_frequent(string)
